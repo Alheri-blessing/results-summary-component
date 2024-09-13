@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    min-height: 100vh;
+    padding: 50px;
+}
+:root {
+--White: #ffffff;
+--Paleblue:	#ebf1ff;
+--Lightlavender: #c8c7ff;
+--Darkgrayblue: #303b5a;
+--Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+-Cobaltblue: hsl(234, 85%, 45%);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background-color: var(--White);
+    box-shadow: 5px 5px var(--Paleblue);
+    border: 2px solid var(--White);
+    width: 500px;
+}
+.container .result {
+    background-color: hsl(234, 85%, 45%);
+    
+    padding: 20px;
+    width: 240px;
+    border-radius: 10px;
+    color: var(--White);
+    min-height: 60vh
+}
+
+.score {
+    width: 100px;
+    height: 100px;
+    background-color: var(--Darkgrayblue);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.score h2 {
+    font-size: 30px;
+}
+.score p {
+    font-size: 18px;
+}
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+.summary .sum {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
