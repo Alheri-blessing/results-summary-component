@@ -10,16 +10,16 @@ body {
     align-content: center;
     justify-items: center;
     padding: 50px;
-    min-height: 100vh;
-    
+    min-height: 100vh; 
 }
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 :root primary {
-    --Lightred: hsl(0, 100%, 67%);
+    --Lightred: 	#ff5757;
     --Orangeyyellow: hsl(39, 100%, 56%);
     --Greenteal: hsl(166, 100%, 37%);
     --Cobaltblue: hsl(234, 85%, 45%);
@@ -36,24 +36,25 @@ body {
 --Lightlavender: hsl(241, 100%, 89%);
 --Darkgrayblue: hsl(224, 30%, 27%);
 }
-.result {
-    width: 260px;
-    height: 60vh;
+.card {
+    width: 300px;
+    height: 65vh;
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
-.result p {
+.card p {
     color: hsl(221, 100%, 96%);
     font-size: 18px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 .score {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
     align-items: center;
@@ -93,7 +94,7 @@ body {
 }
 .summary {
     background-color:white;
-    width: 260px;
+    width: 300px;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -103,16 +104,51 @@ body {
 .summary .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 10px;
+    
 }
 .summary .content .list {
     padding-top: 20px;
     padding-bottom: 20px; 
 }
-.summary .content .list:nth-of-type(Reaction) {
-    color: hsl(0, 100%, 67%);
+
+.list {
+    display: flex;
 }
-.social button {
+.list :nth-of-type(Reaction) {
+    color: #ff5757;
+}
+
+.button1 {
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: rgb(236, 233, 233);
+    padding: 10px 10px;
+    text-align: center;
     text-decoration: none;
-    background-color: hsla(241, 72%, 46%, 0);
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .button1:hover {
+    background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: white;
+  
 }
+
+  @media only screen and (max-width: 320px) {
+    body {
+        background-color: var(--White);
+        
+        align-content: center;
+        justify-items: center;
+        min-height: 100vh; 
+    }
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+  }
